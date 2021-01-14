@@ -543,7 +543,7 @@ header.fixed .header__inner {
 
 .slick-next {
     content: "";
-    right: -50px;
+    right: -100px;
 
     border-top: 3px solid #fff;
     border-right: 3px solid #fff;
@@ -553,7 +553,7 @@ header.fixed .header__inner {
 
 .slick-prev {
     content: "";
-    left: -50px;
+    left: -100px;
 
     border-top: 3px solid #fff;
     border-left: 3px solid #fff;
@@ -662,6 +662,19 @@ header.fixed .header__inner {
 
 /* Media
 =================== */
+
+
+@media (max-width: 1450px) {
+    /* SLider */
+
+    .slick-next {
+        right: -50px;
+    }
+
+    .slick-prev {
+        left: -50px;
+    }
+}
 
 @media (max-width: 1300px) {
     /* Works */
