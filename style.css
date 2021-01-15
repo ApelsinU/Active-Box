@@ -663,7 +663,6 @@ header.fixed .header__inner {
 /* Media
 =================== */
 
-
 @media (max-width: 1450px) {
     /* SLider */
 
@@ -685,7 +684,6 @@ header.fixed .header__inner {
     /* SLider */
 
     .slick-next {
-        /*left: 525px;*/
         right: 20px;
     }
 
@@ -715,9 +713,11 @@ header.fixed .header__inner {
         flex-direction: column;
         width: 100%;
 
-        text-align: right;
+        text-align: center;
 
-        background-color: #2e314b;
+        background-color: rgba(46, 49, 75, .6);
+
+        letter-spacing: 7px;
     }
 
     .nav.show {
@@ -727,7 +727,7 @@ header.fixed .header__inner {
     .nav__link {
         padding: 10px 15px;
         margin: 0 15px;
-        border-bottom: 1px solid #51546a;
+       /* border-bottom: 1px solid #51546a;*/
     }
 
     /* Burger */
