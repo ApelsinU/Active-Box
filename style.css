@@ -91,7 +91,6 @@ header.fixed .header__inner {
     margin-left: 0;
 }
 
-
 .nav__link:hover {
     opacity: 1;
 }
@@ -713,11 +712,12 @@ header.fixed .header__inner {
         flex-direction: column;
         width: 100%;
 
-        text-align: center;
+        text-align: right;
 
-        background-color: rgba(46, 49, 75, .6);
+        background-color: rgba(46, 49, 75);
+        opacity: .9;
 
-        letter-spacing: 7px;
+        letter-spacing: 5px;
     }
 
     .nav.show {
@@ -727,7 +727,6 @@ header.fixed .header__inner {
     .nav__link {
         padding: 10px 15px;
         margin: 0 15px;
-       /* border-bottom: 1px solid #51546a;*/
     }
 
     /* Burger */

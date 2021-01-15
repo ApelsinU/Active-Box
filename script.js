@@ -30,18 +30,19 @@ document.addEventListener('DOMContentLoaded', function() {
     let nav = document.getElementById('#nav');
     let navLinks = document.querySelectorAll('.linkJS');
 
+
+
     navLinks.forEach(onLinksClick);
     function onLinksClick(link) {
+
         link.addEventListener("click", function(event) {
             event.preventDefault();
 
             let currLink = link;
             let elementId = currLink.getAttribute("data-scroll");
             let elem = document.getElementById(elementId);
-
             let margin = getComputedStyle(elem).marginTop;
 
-            console.log(margin);
             let elementOffset = elem.getBoundingClientRect().top - navHeight+1 - parseInt(margin, 10);
 
             window.scrollBy({
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             nav.classList.remove('show');
+
         });
     };
 
